@@ -1,38 +1,50 @@
-/*
 .container {
-    width: 60vw;
-    border: 2px dashed green;
+  width: 60vw;
+  border: 2px dashed green;
+  position: relative;
+  overflow: hidden;
 }
-*/
 
 .box {
-    width: 200px;
-    height: 70px;
-    font-family: sans-serif;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  width: 200px;
+  height: 70px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .static {
-    background-color: #ff1d00;
+  background-color: #ff1d00;
+  position: static;
+  translate: 100%;
+  rotate: 45deg;
 }
 
 .fixed {
-    background-color: #ffeb00;
-    color: black;
+  background-color: #ffeb00;
+  color: black;
+  position: fixed;
+  top: 40px;
+  left: 4%;
 }
 
 .sticky {
-    background-color: #ff9ecf;
+  background-color: #ff9ecf;
+  position: sticky;
+  z-index: 9;
 }
 
 .relative {
-    background-color: #1fd81f;
+  background-color: #1fd81f;
+  position: relative;
 }
 
 .absolute {
-    background-color: #0180fc;
+  background-color: #0180fc;
+  position: absolute;
+  top: 20%;
+  left: 70%;
 }
